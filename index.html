@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .form-container {
+            flex: 1;
+            max-width: 640px;
+        }
+
+        .images-container {
+            flex: 1;
+            overflow-y: auto;
+            height: 650px; /* Adjust height */
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .images-container:hover {
+            transform: scale(1.02);
+        }
+
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        .image-wrapper:nth-child(odd) {
+            animation-delay: 0.3s;
+        }
+
+        .image-wrapper:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
+        .image-wrapper img {
+            width: 90%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .image-wrapper img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #444;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-container, .images-container {
+                max-width: 100%;
+            }
+
+            .images-container {
+                height: auto;
+                overflow-y: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Book an Appointment</h2>
+
+    <div class="container">
+        <!-- Google Form -->
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGQG97od2855onlMBIOBkfnI_f2Thc69XJ1IOQUSa6acOlWQ/viewform?embedded=true" width="640" height="2172" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+        <!-- Images Section -->
+        <div class="images-container">
+            <div class="image-wrapper">
+                <label>Taper Fade - R70</label>
+                <img src="./pictures/Screenshot 2025-03-14 145121.png" alt="Taper Fade">
+            </div>
+
+            <div class="image-wrapper">
+                <label>Legends - R80</label>
+                <img src="./pictures/Screenshot 2025-03-14 145131.png" alt="Legends">
+            </div>
+
+            <div class="image-wrapper">
+                <label>Classic Cut - R75</label>
+                <img src="./pictures/Screenshot 2025-03-14 145141.png" alt="Classic Cut">
+            </div>
+
+            <!-- Add More Haircuts Here -->
+        </div>
+    </div>
+
+</body>
+</html>
