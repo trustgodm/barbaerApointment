@@ -26,21 +26,25 @@
             justify-content: center;
             align-items: flex-start;
             gap: 20px;
+            margin-bottom: 30%;
             max-width: 1200px;
             margin: auto;
         }
 
         .form-container {
             flex: 1;
-            max-width: 640px;
+         
+            max-width: 60%x;
+            height: fit-content;
             animation: fadeInLeft 1s ease-in-out;
         }
 
         .images-container {
             flex: 1;
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            margin-top: -330px;
             padding: 10px;
             background: white;
             border-radius: 10px;
@@ -140,32 +144,36 @@
 
     <h2>Book an Appointment</h2>
 
-    <div class="container">
+    <section class="container">
         <!-- Google Form -->
-        <div class="form-container">
+        <section  class="form-container">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGQG97od2855onlMBIOBkfnI_f2Thc69XJ1IOQUSa6acOlWQ/viewform?embedded=true" width="100%" height="2172" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-
+           
+        </section >
+      
+    </section >
+    
         <!-- Images Section -->
-        <div class="images-container">
-            <div class="image-wrapper">
+        <section  class="images-container">
+            <h2>Checkout out caterlog below</h2>
+            <section  class="image-wrapper">
                 <label>Taper Fade - R70</label>
                 <img src="./pictures/Screenshot 2025-03-14 145121.png" alt="Taper Fade">
-            </div>
+            </section >
 
-            <div class="image-wrapper">
+            <section  class="image-wrapper">
                 <label>Legends - R80</label>
                 <img src="./pictures/Screenshot 2025-03-14 145131.png" alt="Legends">
-            </div>
+            </section >
 
-            <div class="image-wrapper">
+            <section  class="image-wrapper">
                 <label>Classic Cut - R75</label>
                 <img src="./pictures/Screenshot 2025-03-14 145141.png" alt="Classic Cut">
-            </div>
+            </section >
 
             <!-- Add More Haircuts Here -->
-        </div>
-    </div>
+        </section >
+    
 
     <script>
         // JavaScript for additional interactivity (optional)
