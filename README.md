@@ -6,5 +6,5 @@ The caterlog of the barber is available for users to choose from.
 
 features to be added: A live calender to show unavailable slots.
 
-Website: https://trustgodm.github.io/
+Website: https://trustgodm.github.io
                       
