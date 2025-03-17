@@ -5,4 +5,6 @@ It uses  google forms and google sheets to store the information.
 The caterlog of the barber is available for users to choose from.
 
 features to be added: A live calender to show unavailable slots.
+
+Website: https://trustgodm.github.io/
                       
